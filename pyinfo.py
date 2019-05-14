@@ -116,7 +116,7 @@ def section_py_internals():
 		data += 'File System Encoding', sys.getfilesystemencoding()
 		data += 'Maximum Integer Size', str( sys.maxsize ) + ' (%s)' % str( hex( sys.maxsize ) ).upper().replace( "X", "x" )
 	if hasattr( sys, 'getrecursionlimit' ): data += 'Maximum Recursion Depth', sys.getrecursionlimit()
-	if hasattr( sys, 'tracebacklimit' ): tabdatale += 'Maximum Traceback Limit', sys.tracebacklimit
+	if hasattr( sys, 'tracebacklimit' ): data += 'Maximum Traceback Limit', sys.tracebacklimit
 	else:
 		data += 'Maximum Traceback Limit', '1000'
 		data += 'Maximum Unicode Code Point', sys.maxunicode
